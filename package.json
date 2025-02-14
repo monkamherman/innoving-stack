@@ -5,12 +5,12 @@
   "description": "description of the projet",
   "repository": {
     "type": "git",
-    "url": "https://github.com/01Barthez/Iphone-Cameroon"
+    "url": "https://github.com/01Barthez/start-react-projet"
   },
-  "homepage": "https://github.com/01Barthez/Iphone-Cameroon#readme",
-  "readme": "https://github.com/01Barthez/Iphone-Cameroon#readme",
+  "homepage": "https://github.com/01Barthez/start-react-projet#readme",
+  "readme": "https://github.com/01Barthez/start-react-projet#readme",
   "bugs": {
-    "url": "https://github.com/01Barthez/Iphone-Cameroon/issues"
+    "url": "https://github.com/01Barthez/start-react-projet/issues"
   },
   "author": {
     "name": "Barthez Kenwou",
