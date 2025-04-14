@@ -1,19 +1,21 @@
-import SEO from '@/components/custom/utils/SEO'
 import React from 'react'
+import HeroSection from './composant/HeroSection'
+import ContactSection from './composant/ContactSection'
+import ProcessSection from './composant/ProcessSection'
+import ServicesSection from './composant/ServicesSection'
+import PortfolioSection from './composant/PortfolioSection'
+import TestimonialSection from './composant/TestimonialSection'
 
 const Home: React.FC = () => {
     return (
         <>
-            {/* Seo compoments */}
-            <SEO
-                title='Welcome to iPhone Store Cameroon - Your Trusted Apple Partner'
-                description='Explore the latest iPhones and accessories at unbeatable prices. Enjoy a seamless shopping experience on our modern e-commerce platform.'
-            />
-
-            {/* App Comoments */}
-            <>
-                Home
-            </>
+            
+          <HeroSection />
+          <ServicesSection />
+          <ProcessSection />
+          <PortfolioSection />
+          <TestimonialSection />
+          <ContactSection />
         </>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import pageNoteFound from '/images/not-found-image.png'
+// import pageNoteFound from '/images/not-found-image.png'
 import SEO from '@/components/custom/utils/SEO'
 
 const PageError: React.FC = () => {
@@ -59,11 +59,11 @@ const PageError: React.FC = () => {
 				</div>
 
 				<div className="max-w-full lg:max-w-[50%] flex-1 w-full md:h-full flex items-center justify-center text-center">
-					<img
+					{/* <img
 						src={pageNoteFound}
 						alt="404 page not found"
 						className="w-full h-full pointer-events-none select-none"
-					/>
+					/> */}
 				</div>
 			</div>
 		</section>

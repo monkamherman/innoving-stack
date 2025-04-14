@@ -1,0 +1,53 @@
+:root {
+    --primary: #6e8efb;
+    --primary-rgb: 110, 142, 251;
+    --secondary: #a777e3;
+    --secondary-rgb: 167, 119, 227;
+    --bg: #0f172a;
+    --text: #f8fafc;
+    --card-bg: #1e293b;
+  }
+  
+  /* Thème Nature */
+  [data-theme="nature"] {
+    --primary: #4ade80;
+    --primary-rgb: 74, 222, 128;
+    --secondary: #22d3ee;
+    --secondary-rgb: 34, 211, 238;
+    --bg: #052e16;
+    --text: #f0fdf4;
+    --card-bg: #14532d;
+  }
+  
+  /* Thème Neon Rouge */
+  [data-theme="neonRed"] {
+    --primary: #ff0000;
+    --primary-rgb: 255, 0, 0;
+    --secondary: #ff00ff;
+    --secondary-rgb: 255, 0, 255;
+    --bg: #0a0a0a;
+    --text: #ffffff;
+    --card-bg: #1a1a1a;
+  }
+  
+  /* Thème Prestige */
+  [data-theme="prestige"] {
+    --primary: #d4af37;
+    --primary-rgb: 212, 175, 55;
+    --secondary: #c0c0c0;
+    --secondary-rgb: 192, 192, 192;
+    --bg: #1a1a1a;
+    --text: #f8f8f8;
+    --card-bg: #2a2a2a;
+  }
+  
+  /* Thème Enfantin */
+  [data-theme="childish"] {
+    --primary: #ff6b6b;
+    --primary-rgb: 255, 107, 107;
+    --secondary: #4ecdc4;
+    --secondary-rgb: 78, 205, 196;
+    --bg: #f7fff7;
+    --text: #292f36;
+    --card-bg: #ffffff;
+  }
