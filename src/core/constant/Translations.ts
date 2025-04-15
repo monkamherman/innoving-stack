@@ -18,6 +18,7 @@ type TranslationKeys = {
   
   export const translations: Translations = {
     fr: {
+      about: 'A propos',
       home: 'Accueil',
       services: 'Services',
       process: 'Processus',
@@ -30,6 +31,7 @@ type TranslationKeys = {
       // ... autres traductions
     },
     en: {
+      about: 'About',
       home: 'Home',
       services: 'Services',
       process: 'Process',
@@ -42,6 +44,7 @@ type TranslationKeys = {
       // ... autres traductions
     },
     es: {
+      about: 'Acerca de',
           home: 'Inicio',
           services: 'Servicios',
           process: 'Proceso',
@@ -55,6 +58,7 @@ type TranslationKeys = {
         },
         
         de: {
+          about: 'Über uns',
           home: 'Startseite',
           services: 'Dienstleistungen',
           process: 'Prozess',

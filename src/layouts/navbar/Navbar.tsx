@@ -12,7 +12,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <div className="w-12 h-12 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-xl mr-3 glow-box">ALS</div>
-            <span className="text-xl font-semibold text-white futurist-font">AppLife Solutions</span>
+            <a href='/' className="text-xl font-semibold text-white futurist-font">AppLife Solutions</a>
           </div>
           
           <nav className="hidden md:flex space-x-8">
@@ -21,6 +21,7 @@ const Header: React.FC = () => {
             <a href="#processus" className="text-white hover:text-purple-300 transition futurist-font">{t('process')}</a>
             <a href="#portfolio" className="text-white hover:text-purple-300 transition futurist-font">{t('portfolio')}</a>
             <a href="#contact" className="text-white hover:text-purple-300 transition futurist-font">{t('contact')}</a>
+            <a href="/about" className="text-white hover:text-purple-300 transition futurist-font">{t('a propos')}</a>
           </nav>
           
           <button 

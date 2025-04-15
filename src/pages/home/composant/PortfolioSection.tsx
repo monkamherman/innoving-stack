@@ -25,7 +25,7 @@ const PortfolioSection: React.FC = () => {
       title: 'MarketPro',
       descKey: 'Plateforme e-commerce complète avec gestion des stocks, paiements sécurisés et analytics.',
       icon: <AiOutlineShoppingCart />,
-      tags: ['project1Tag1', 'project1Tag2', 'project1Tag3'],
+      tags: ['node', 'react', 'mongodb'],
       bgColor: 'primary'
     },
     {
@@ -33,7 +33,7 @@ const PortfolioSection: React.FC = () => {
       title: 'HealthTrack',
       descKey: 'Application mobile de suivi médical avec synchronisation des données et notifications intelligentes.',
       icon: <HiOutlineDeviceMobile />,
-      tags: ['project2Tag1', 'project2Tag2', 'project2Tag3'],
+      tags: ['django', 'node', 'react'],
       bgColor: 'secondary'
     },
     {
@@ -41,7 +41,7 @@ const PortfolioSection: React.FC = () => {
       title: 'Analytics360',
       descKey: "Solution SaaS d'analyse de données en temps réel avec tableaux de bord personnalisables.",
       icon: <AiOutlineBarChart />,
-      tags: ['project3Tag1', 'project3Tag2', 'project3Tag3'],
+      tags: ['react', 'node', 'posgresql'],
       bgColor: 'gradient'
     }
   ];
@@ -101,11 +101,9 @@ const PortfolioSection: React.FC = () => {
                       key={index}
                       className="px-3 py-1 rounded-full text-sm"
                       style={{ 
-                        backgroundColor: project.bgColor === 'gradient' 
-                          ? `linear-gradient(135deg, ${theme.primary} 0%, ${theme.secondary} 100%)`
-                          : theme[project.bgColor],
+                        backgroundColor: project.bgColor,
                         opacity: 0.2,
-                        color: project.bgColor === 'gradient' ? theme.primary : theme[project.bgColor]
+                        color: 'yellow'
                       }}
                     >
                       {t(tagKey)}
