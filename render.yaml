@@ -1,11 +1,10 @@
+version: 1
 services:
-  web:
-    type: web
-    name: winnex tech
-    env: node
+  static-site:
+    type: static
+    name: winnex-tech  # Remplacez par le nom de votre application
     buildCommand: npm run build
-    startCommand: npm run start
+    publish: dist  # Remplacez par le répertoire où les fichiers statiques sont générés
     autoDeploy: true
     envVars:
       NODE_ENV: production
-      PORT: 4000
