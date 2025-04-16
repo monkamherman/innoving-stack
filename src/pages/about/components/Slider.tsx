@@ -10,6 +10,8 @@ interface Founder {
   color: string;
   logo: string;
   photo: string;
+  funFact:string;
+  expertise: string[];
   socialLinks: {
     linkedin: string;
     twitter: string;
@@ -21,9 +23,11 @@ const Slider: React.FC = () => {
   
   const founders: Founder[] = [
     {
-      name: "Jean Dupont",
-      role: "Responsable de K2N Konsultant",
-      story: "Jean Dupont a commencé sa carrière dans le conseil en stratégie avant de fonder K2N Konsultant. Passionné par l'innovation, il guide les entreprises vers le succès.",
+      name: "Sophie Dubois",
+      role: "Directrice Expérience Utilisateur",
+      story: "Après un parcours chez Google et plusieurs startups à succès, Sophie a rejoint AppLife Solutions pour y implanter sa vision de l'UX lifecycle. Elle dirige une équipe de 15 designers qui interviennent sur tout le cycle de vie des applications. 'Une interface mal conçue annihile la valeur d'une architecture technique parfaite' est son mantra.",
+      funFact: "Organise des ateliers de poterie le week-end",
+      expertise: ["UX Strategy", "Design System", "User Research"],
       color: "bg-blue-100",
       logo: "logo-K.svg",
       photo: "konsultan.png",
@@ -33,22 +37,25 @@ const Slider: React.FC = () => {
       },
     },
     {
-        name: "Marie Curie",
-        role: "Responsable de K2N Service",
-        story: "Marie Curie a une expertise approfondie dans la gestion des services clients. Elle a développé des solutions sur mesure pour répondre aux besoins des clients de K2N Service.",
-        color: "bg-green-100",
+        name: "Siodjie Anges Gisliane",
+        role: "Directrice Technique",
+        story: "Diplômée de IAI cameroun avec une spécialisation en génie logiciel, Élise a passé 3 ans chez plusieurs éditeurs de solutions SaaS avant de co-fonder AppLife Solutions. Architecte logiciel renommée, elle a dirigé des projets critiques pour des clients du CAC40. Sa philosophie : 'Une application bien conçue dès la phase d'architecture réduit de 80% les coûts de maintenance future'.",
         logo: "logo-S.svg",
+        funFact: "Collectionne les claviers mécaniques vintage et participe à des hackathons incognito",
+        expertise: ["Architecture logicielle", "DevOps", "Sécurité applicative"],
+        color: "bg-red-100",
         photo: "service.png",
         socialLinks: {
           linkedin: "https://linkedin.com/in/mariecurie",
           twitter: "https://twitter.com/mariecurie",
         },
       },
-      {
-        name: "Pierre Durand",
-        role: "Responsable de K2N Technologie",
-        story: "Pierre Durand est un pionnier dans le domaine de la technologie. Il a dirigé le développement de solutions technologiques de pointe pour K2N Technologie.",
-        color: "bg-red-100",
+      {name: "Thomas Leroy",
+        role: "Directeur de la Stratégie",
+        story: "Ancien consultant senior chez McKinsey spécialisé dans la transformation digitale, Thomas apporte une vision business pragmatique. Il a développé la méthodologie ALM360° qui a servi de base à l'approche unique d'AppLife Solutions. 'Le cycle de vie d'une application ne s'arrête pas au déploiement - c'est là que tout commence' est son credo.",
+        funFact: "Marathonien amateur et passionné de vinification artisanale",
+        expertise: ["Stratégie digitale", "ROI technologique", "Transformation Agile"],
+        color: "bg-gray-200",
         logo: "logo-T.svg",
         photo: "technologie.png",
         socialLinks: {
@@ -117,6 +124,7 @@ const Slider: React.FC = () => {
                 className="w-31 h-31 md:w-96 md:h-96 rounded-full shadow-lg"
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300 }}
+                
               />
             </div>
             
@@ -131,22 +139,33 @@ const Slider: React.FC = () => {
                   className="w-32 h-32 md:w-48 md:h-48 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-20"
                 />
                 <motion.h2 
-                  className="text-3xl font-bold mb-4"
+                  className="text-3xl font-bold mb-4 "
                   variants={textVariants}
+                  style={{  color: theme.primary }}
                 >
                   {founder.name}
                 </motion.h2>
                 <motion.h3 
                   className="text-xl font-semibold mb-4"
                   variants={textVariants}
+                  style={{  color: theme.primary }}
                 >
                   {founder.role}
                 </motion.h3>
                 <motion.p 
                   className="text-gray-700"
                   variants={textVariants}
+                  
                 >
                   {founder.story}
+                </motion.p>
+                <motion.p className='text-gray-50' variants={textVariants} 
+                    style={{  color: theme.primary }}
+                    >
+                  <span className='font-semibold'>funFact:</span> {founder.funFact}
+                </motion.p>
+                <motion.p className='text-gray-50' variants={textVariants} style={{  color: theme.primary }}>
+                   <span className='font-semibold'>Expertise:</span> {founder.expertise.join(', ')}
                 </motion.p>
                 <motion.div 
                   className="mt-4 flex gap-8"

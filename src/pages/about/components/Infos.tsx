@@ -1,7 +1,8 @@
 import React from 'react';
 // import { useTheme } from '@/contexts/ThemeContext';
 // eslint-disable-next-line @typescript-eslint/consistent-type-imports
-import Theme from '@/contexts/ThemeContext';
+import {Theme} from '@/contexts/ThemeContext';
+// import ThemeContext from '@/contexts/ThemeContext';
 
 interface InfoProps {
   icon: React.ReactNode;

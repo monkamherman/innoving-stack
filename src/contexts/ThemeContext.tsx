@@ -2,7 +2,7 @@ import React, { createContext, useState, useContext } from 'react';
 import type { ReactNode } from 'react';
 
 // Define the structure of a theme
-interface Theme {
+export interface Theme {
   primary: string;
   secondary: string;
   bg: string;
@@ -18,7 +18,7 @@ interface ThemeContextType {
 }
 
 // Define the themes
-const themes: Record<string, Theme> = {
+ const themes: Record<string, Theme> = {
   futurist: {
     primary: '#6e8efb',
     secondary: '#a777e3',
