@@ -60,6 +60,9 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+  .theme {
+    --animate-background-position-spin: background-position-spin 3000ms infinite alternate;
+  }
 }
 @layer base {
   * {
@@ -127,4 +130,24 @@
 
 .link-underline:hover::after {
   @apply origin-left scale-100 transition duration-300;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@theme inline {
+  @keyframes background-position-spin {
+  0% {
+    backgroundPosition: top center;
+    }
+  100% {
+    backgroundPosition: bottom center;
+    }
+  }
 }

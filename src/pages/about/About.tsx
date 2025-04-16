@@ -18,20 +18,20 @@ const AboutPage: React.FC = () => {
         <div
           className="flex h-full w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat px-4"
           style={{ 
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/livetygroup.png')",
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images.png')",
             backgroundBlendMode: 'darken'
           }}
         >
           <h1 
             className="w-full max-w-[40rem] rounded p-4 text-center text-2xl font-bold leading-snug sm:text-3xl sm:leading-normal md:text-4xl lg:text-5xl xl:text-6xl futurist-font"
-            style={{ backgroundColor: theme.cardBg, color: theme.text }}
+            style={{  color: theme.primary }}
           >
             {t('A propos')}
           </h1>
 
           <p 
             className="mt-4 w-full max-w-[20rem] rounded p-4 text-center text-sm sm:text-base md:text-lg lg:text-xl futurist-font"
-            style={{ backgroundColor: theme.cardBg, color: theme.text }}
+            style={{  color: theme.primary }}
           >
             {t('Apprenez un peu plus sur nous')}
           </p>
@@ -62,7 +62,7 @@ const AboutPage: React.FC = () => {
         </div>
         <div className="flex flex-1 items-center justify-center">
           <img
-            src="/Colaborateur.png"
+            src="teams-working.png"
             alt={t('teamImageAlt')}
             className="rounded-lg shadow-xl max-h-[500px] object-cover"
           />
