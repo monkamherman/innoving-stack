@@ -1,3 +1,4 @@
+import { FaPaperPlane } from "react-icons/fa"; 
 import React from 'react'
 import { useLanguage} from '@/contexts/LanguageContext';
 import  {useTheme} from '@/contexts/ThemeContext'
@@ -93,11 +94,11 @@ const Footer: React.FC = () => {
             <div className="flex">
               <input 
                 type="email" 
-                placeholder={t('emailPlaceholder')}
+                placeholder={t('abc@exemple.com')}
                 className="px-4 py-2 rounded-l-lg focus:outline-none bg-gray-800 text-white w-full"
               />
               <button className="gradient-bg px-4 py-2 rounded-r-lg hover:opacity-90 transition glow-box">
-                <i className="fas fa-paper-plane"></i>
+                <FaPaperPlane />
               </button>
             </div>
           </div>
