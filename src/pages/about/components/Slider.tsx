@@ -3,6 +3,7 @@ import { useTheme } from '@/contexts/ThemeContext';
 import { AiOutlineLinkedin, AiOutlineTwitter } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 import { NeonGradientCard } from '@/components/magicui/neon-gradient-card';
+import { MagicCard } from '@/components/magicui/magic-card';
 
 interface Founder {
   name: string;
@@ -21,13 +22,9 @@ const FounderCard: React.FC<{ founder: Founder }> = ({ founder }) => {
   const { theme } = useTheme();
 
   return (
-    <NeonGradientCard
-      borderWidth={2}
-      className="relative overflow-hidden rounded-xl"
-      style={{
-        borderColor: theme.primary,
-        backgroundColor: theme.cardBg,
-      }}
+    <MagicCard
+      gradientColor={theme.primary === 'prestige' ? '#D9D9D955' : '#262626'}
+      className="p-1"
     >
       <div className="flex flex-col md:flex-row gap-8 p-6">
         {/* Photo */}
@@ -59,7 +56,7 @@ const FounderCard: React.FC<{ founder: Founder }> = ({ founder }) => {
             {founder.role}
           </h3>
           
-          <p className="mb-4" style={{ color: theme.text }}>
+          <p className="mb-4" style={{ color: 'black' }}>
             {founder.story}
           </p>
 
@@ -67,7 +64,7 @@ const FounderCard: React.FC<{ founder: Founder }> = ({ founder }) => {
             <span className="font-semibold" style={{ color: theme.primary }}>
               Fun Fact:
             </span>
-            <span style={{ color: theme.text }}> {founder.funFact}</span>
+            <span style={{ color: 'black' }}> {founder.funFact}</span>
           </div>
 
           <div className="mb-6">
@@ -80,8 +77,8 @@ const FounderCard: React.FC<{ founder: Founder }> = ({ founder }) => {
                   key={index}
                   className="px-3 py-1 rounded-full text-sm"
                   style={{
-                    backgroundColor: `${theme.primary}20`,
-                    color: theme.text
+                    backgroundColor: `${theme.primary}50`,
+                    color: 'black'
                   }}
                 >
                   {skill}
@@ -120,7 +117,7 @@ const FounderCard: React.FC<{ founder: Founder }> = ({ founder }) => {
           </div>
         </div>
       </div>
-    </NeonGradientCard>
+    </MagicCard>
   );
 };
 
@@ -184,7 +181,7 @@ const FoundersSlider: React.FC = () => {
         Découvrez les fondateurs
       </motion.h2>
 
-      <div className="grid grid-cols-1 gap-12 max-w-6xl mx-auto" >
+      <div className="grid grid-cols-1 gap-12 max-w-6xl mx-auto " >
         {founders.map((founder, index) => (
           <motion.div
             key={index}
@@ -193,7 +190,9 @@ const FoundersSlider: React.FC = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             viewport={{ once: true, margin: "-50px" }}
           >
-            <FounderCard founder={founder} />
+            <NeonGradientCard>
+              <FounderCard founder={founder} />
+            </NeonGradientCard>
           </motion.div>
         ))}
       </div>

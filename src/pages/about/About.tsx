@@ -12,7 +12,7 @@ const AboutPage: React.FC = () => {
   const { theme } = useTheme();
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: theme.bg, color: theme.text }}>
+    <div className="" style={{ backgroundColor: theme.bg, color: theme.text }}>
       {/* Hero Section */}
       <div className={`font-Roboto flex h-[50vh] w-full items-center justify-center`}>
         <div
@@ -79,7 +79,7 @@ const AboutPage: React.FC = () => {
             {t("La signification de notre logo")}
           </h1>
           <img 
-            src="/3D.png" 
+            src="/logo.png" 
             alt={t("Logo AppLife Solutions")} 
             className="h-auto w-full max-w-[65rem] rounded-lg" 
           />
@@ -88,7 +88,7 @@ const AboutPage: React.FC = () => {
           <Info
             icon={<BiCubeAlt className="text-2xl lg:text-3xl" style={{ color: theme.primary }} />}
             title={t('als')}
-            description={t("ALS représente AppLife Solutions. Le cube dans notre logo symbolise les fondations solides que nous bâtissons pour nos clients, tandis que le dégradé de couleurs illustre le cycle complet de vie des applications que nous maîtrisons.")}
+            description={t("Le logo d’Applife Solution représente une fusion puissante entre la technologie et le cycle évolutif des applications. La partie inférieure, composée de circuits rouges stylisés, évoque le système nerveux digital d’une application : développement, architecture, automatisation et infrastructure.La partie supérieure, formée de formes blanches acérées disposées en arc, symbolise à la fois :une protection (sécurité, surveillance continue),une transformation cyclique (cycle DevOps, mises à jour, évolutivité),et une main de contrôle ou une griffe, marquant votre maîtrise complète du cycle de vie logiciel.")}
             theme={theme}
           />           
         </div>
