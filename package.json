@@ -3,20 +3,6 @@
   "private": "false",
   "version": "0.0.0",
   "description": "description of the projet",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/01Barthez/start-react-projet"
-  },
-  "homepage": "https://github.com/01Barthez/start-react-projet#readme",
-  "readme": "https://github.com/01Barthez/start-react-projet#readme",
-  "bugs": {
-    "url": "https://github.com/01Barthez/start-react-projet/issues"
-  },
-  "author": {
-    "name": "Barthez Kenwou",
-    "email": "kenwoubarthez@gmail.com",
-    "url": "https://github.com/01Barthez"
-  },
   "license": "MIT",
   "main": "index.html",
   "keywords": [
@@ -33,6 +19,7 @@
   "scripts": {
     "dev": "vite",
     "build": "rimraf dist && vite build",
+    "preview": "vite preview",
     "build:test": "NODE_ENV=production rimraf /tmp/dist && vite build --outDir /tmp/dist",
     "docker:build": "docker build -t react-started .",
     "docker:start": "docker run -p 4001:3000 react-started",
