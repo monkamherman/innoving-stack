@@ -1,0 +1,11 @@
+services:
+  web:
+    type: web
+    name: winnex tech
+    env: node
+    buildCommand: npm run build
+    startCommand: npm run start
+    autoDeploy: true
+    envVars:
+      NODE_ENV: production
+      PORT: 4000
