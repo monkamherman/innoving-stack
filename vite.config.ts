@@ -23,12 +23,12 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-        about: resolve(__dirname, 'about.html')
-      },
-    },
+    // rollupOptions: {
+    //   input: {
+    //     main: resolve(__dirname, 'index.html'),
+    //     about: resolve(__dirname, 'about.html')
+    //   },
+    // },
   },
   server: {
     host: process.env.HOST || '0.0.0.0',
