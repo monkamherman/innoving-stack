@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 // import { envs } from './src/core/config/env';
-import path, { dirname } from 'path';
+import path, { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import dotenv from 'dotenv';
@@ -22,7 +22,13 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        about: resolve(__dirname, 'about.html')
+      },
+    },
   },
   server: {
     host: process.env.HOST || '0.0.0.0',

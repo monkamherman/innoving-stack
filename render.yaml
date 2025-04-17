@@ -8,4 +8,5 @@ static_sites:
     
     routes:
       - path: /*
-        redirect: /index.html
+        destination: /index.html
+        type: rewrite
