@@ -5,6 +5,7 @@ static_sites:
     publishPath: ./dist
     env: node
     region: frankfurt  
+    
     routes:
       - path: /*
         redirect: /index.html
