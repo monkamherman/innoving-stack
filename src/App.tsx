@@ -6,6 +6,7 @@ import { LanguageProvider } from '@/contexts/LanguageContext';
 import { ThemeProviderCustome } from '@/contexts/ThemeContext';
 import ScrollProgressBar from '@/components/custom/utils/ScrollProgress'
 import OfflineAlert from '@/components/custom/utils/OfflineAlert';
+import { HashRouter } from 'react-router-dom'
 
 
 const App: React.FC = () => {
@@ -13,7 +14,9 @@ const App: React.FC = () => {
     <ThemeProviderCustome>
       <LanguageProvider>
       <ScrollProgressBar />
+      <HashRouter>
       <RouterProvider router={Router} />
+      </HashRouter>
       
       <Toaster />
       <OfflineAlert />
