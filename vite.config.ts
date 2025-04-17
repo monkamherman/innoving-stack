@@ -21,7 +21,9 @@ export default defineConfig({
       process: path.resolve(__dirname, 'node_modules/process'),
     },
   },
-
+  build: {
+    outDir: 'dist'
+  },
   server: {
     host: process.env.HOST || '0.0.0.0',
     port: Number(process.env.PORT) || 4000,
