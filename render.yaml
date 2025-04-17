@@ -1,7 +1,7 @@
 
 static_sites:
-  - name: applifesolutions
-    buildCommand: npm install && npm run build
+  - name: applife-solutions
+    buildCommand: npm install && npm run build && cp _redirects dist/
     publishPath: ./dist
     env: node
     region: frankfurt  
@@ -10,3 +10,4 @@ static_sites:
       - path: /*
         destination: /index.html
         type: rewrite
+        status: 200
