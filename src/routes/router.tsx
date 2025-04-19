@@ -38,14 +38,14 @@ const Router = createBrowserRouter([
 					<Footer />
 				</>,
 				children: [
-					{
-						path: '/',
-						element: <DynamicPageLoader pageKey="home/Home" />
-					},
-					{
-						path: '/about',
-						element: <DynamicPageLoader pageKey="about/About" />
-					},
+					// {
+					// 	path: '/',
+					// 	element: <DynamicPageLoader pageKey="home/Home" />
+					// },
+					// {
+					// 	path: '/about',
+					// 	element: <DynamicPageLoader pageKey="about/About" />
+					// },
 
 					// Exemple of private route
 					{
