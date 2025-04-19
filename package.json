@@ -17,7 +17,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "rimraf dist && vite build",
+     "build": "react-scripts build && cp build/index.html build/404.html",
     "preview": "vite preview",
     "build:test": "NODE_ENV=production rimraf /tmp/dist && vite build --outDir /tmp/dist",
     "docker:build": "docker build -t react-started .",
