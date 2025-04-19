@@ -22,7 +22,7 @@ const ProcessSection: React.FC = () => {
   ];
 
   return (
-    <section id="processus" className="py-20 px-6" style={{ backgroundColor: theme.bg }}>
+    <section id="processus" className="py-20 px-6 md:px-0" style={{ backgroundColor: theme.bg }}>
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 futurist-font glow-text">
