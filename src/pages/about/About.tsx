@@ -12,7 +12,7 @@ const AboutPage: React.FC = () => {
   const { theme } = useTheme();
 
   return (
-    <div className="" style={{ backgroundColor: theme.bg, color: theme.text }}>
+    <div id='about' className="" style={{ backgroundColor: theme.bg, color: theme.text }}>
       {/* Hero Section */}
       <div className={`font-Roboto flex h-[50vh] w-full items-center justify-center`}>
         <div

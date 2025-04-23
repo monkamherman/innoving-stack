@@ -38,10 +38,10 @@ const Router = createBrowserRouter([
 					<Footer />
 				</>,
 				children: [
-					// {
-					// 	path: '/',
-					// 	element: <DynamicPageLoader pageKey="home/Home" />
-					// },
+					{
+						path: '/',
+						element: <DynamicPageLoader pageKey="home/Home" />
+					},
 					// {
 					// 	path: '/about',
 					// 	element: <DynamicPageLoader pageKey="about/About" />

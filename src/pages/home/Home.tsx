@@ -5,6 +5,7 @@ import ProcessSection from './composant/ProcessSection'
 import ServicesSection from './composant/ServicesSection'
 import PortfolioSection from './composant/PortfolioSection'
 import TestimonialSection from './composant/TestimonialSection'
+import AboutPage from '../about/About'
 
 const Home: React.FC = () => {
     return (
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
           <ProcessSection />
           <PortfolioSection />
           <TestimonialSection />
+          <AboutPage />
           <ContactSection />
         </>
     )

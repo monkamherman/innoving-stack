@@ -1,19 +1,13 @@
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { FaBars } from 'react-icons/fa';
-import AboutPage from '@/pages/about/About';
-import HomePage from '@/pages/home/Home';
+
 
 const Navbar: React.FC = () => {
   const { t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
-  const [showAbout, setShowAbout] = React.useState(false);
   
-  const showHome = () => {
-    setShowAbout(false);
-    setMobileMenuOpen(false);
-  };
-  
+ 
   return (
     <>
       <header className="fixed w-full bg-gray-900 bg-opacity-90 backdrop-blur-sm shadow-md z-50 cyber-border">
@@ -25,7 +19,6 @@ const Navbar: React.FC = () => {
               </div>
               <a 
                 href="#" 
-                onClick={showHome} 
                 className="text-xl font-semibold text-white futurist-font"
               >
                 AppLife Solutions
@@ -35,48 +28,41 @@ const Navbar: React.FC = () => {
             <nav className="hidden md:flex space-x-8">
               <a 
                 href="#" 
-                onClick={showHome} 
                 className="text-white hover:text-purple-300 transition futurist-font"
               >
                 {t('home')}
               </a>
               <a 
                 href="#services" 
-                onClick={showHome} 
                 className="text-white hover:text-purple-300 transition futurist-font"
               >
                 {t('services')}
               </a>
               <a 
                 href="#processus" 
-                onClick={showHome} 
                 className="text-white hover:text-purple-300 transition futurist-font"
               >
                 {t('process')}
               </a>
               <a 
                 href="#portfolio" 
-                onClick={showHome} 
                 className="text-white hover:text-purple-300 transition futurist-font"
               >
                 {t('portfolio')}
               </a>
+              
               <a 
-                href="#contact" 
-                onClick={showHome} 
-                className="text-white hover:text-purple-300 transition futurist-font"
-              >
-                {t('contact')}
-              </a>
-              <a 
-                href="#" 
-                onClick={() => {
-                  setShowAbout(true);
-                  setMobileMenuOpen(false);
-                }} 
+                href="#about" 
+               
                 className="text-white hover:text-purple-300 transition futurist-font"
               >
                 {t('a propos')}
+              </a>
+              <a 
+                href="#contact" 
+                className="text-white hover:text-purple-300 transition futurist-font"
+              >
+                {t('contact')}
               </a>
             </nav>
             
@@ -93,58 +79,48 @@ const Navbar: React.FC = () => {
             <div className="flex flex-col space-y-3">
               <a 
                 href="#" 
-                onClick={showHome} 
                 className="text-white hover:text-purple-300 transition futurist-font"
               >
                 {t('home')}
               </a>
               <a 
                 href="#services" 
-                onClick={showHome} 
                 className="text-white hover:text-purple-300 transition futurist-font"
               >
                 {t('services')}
               </a>
               <a 
                 href="#processus" 
-                onClick={showHome} 
                 className="text-white hover:text-purple-300 transition futurist-font"
               >
                 {t('process')}
               </a>
               <a 
                 href="#portfolio" 
-                onClick={showHome} 
                 className="text-white hover:text-purple-300 transition futurist-font"
               >
                 {t('portfolio')}
               </a>
               <a 
-                href="#contact" 
-                onClick={showHome} 
-                className="text-white hover:text-purple-300 transition futurist-font"
-              >
-                {t('contact')}
-              </a>
-              <a 
-                href="#" 
-                onClick={() => {
-                  setShowAbout(true);
-                  setMobileMenuOpen(false);
-                }} 
+                href="#about" 
                 className="text-white hover:text-purple-300 transition futurist-font"
               >
                 {t('a propos')}
               </a>
+              <a 
+                href="#contact" 
+                className="text-white hover:text-purple-300 transition futurist-font"
+              >
+                {t('contact')}
+              </a>
+             
             </div>
           </div>
         </div>
       </header>
       
       {/* Contenu principal */}
-      <main>
-        {showAbout ? <AboutPage /> : <HomePage />}
-      </main>
+     
     </>
   );
 };
