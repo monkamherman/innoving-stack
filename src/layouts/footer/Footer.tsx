@@ -4,6 +4,7 @@ import { useLanguage} from '@/contexts/LanguageContext';
 import  {useTheme} from '@/contexts/ThemeContext'
 import ThemeSelector from '@/layouts/footer/ThemeSelector';
 import LanguageSelector from './LanguageSelector';
+import Whatsapp from './Whatsapp';
 
 const Footer: React.FC = () => {
 
@@ -84,6 +85,7 @@ const Footer: React.FC = () => {
           </div>
           <LanguageSelector />
           <ThemeSelector />
+          <Whatsapp />
           <div>
             <h4 className="text-lg font-semibold text-white mb-4 futurist-font">
               {t('newsletter')}

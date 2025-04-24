@@ -1,9 +1,9 @@
+import { DiMitlicence } from "react-icons/di"; 
 import { AiOutlineBarChart } from "react-icons/ai"; 
 import { HiOutlineDeviceMobile } from "react-icons/hi"; 
-import { AiOutlineShoppingCart } from "react-icons/ai"; 
 import { useLanguage} from '@/contexts/LanguageContext';
 import  {useTheme} from '@/contexts/ThemeContext'
-import React from 'react';
+import React, { useState } from 'react';
 import type { JSX } from "react/jsx-runtime";
 
 type Project = {
@@ -11,6 +11,7 @@ type Project = {
   title: string;
   descKey: string;
   icon: JSX.Element;
+  link: string;
   tags: string[];
   bgColor: 'primary' | 'secondary' | 'gradient';
 };
@@ -18,33 +19,58 @@ type Project = {
 const PortfolioSection: React.FC = () => {
   const { t } = useLanguage();
   const { theme } = useTheme();
+  const [showAll, setShowAll] = useState(false);
 
   const projects: Project[] = [
     {
       id: 'project1',
-      title: 'MarketPro',
-      descKey: 'Plateforme e-commerce complète avec gestion des stocks, paiements sécurisés et analytics.',
-      icon: <AiOutlineShoppingCart />,
-      tags: ['node', 'react', 'mongodb'],
+      title: 'Future academy',
+      descKey: "Site web éducatif moderne et responsive, offrant une vitrine dynamique pour une institution scolaire.",
+      icon: <DiMitlicence />,
+      link: 'https://future-academic.onrender.com',
+      tags: ['tailwind css', 'react'],
       bgColor: 'primary'
     },
     {
       id: 'project2',
-      title: 'HealthTrack',
-      descKey: 'Application mobile de suivi médical avec synchronisation des données et notifications intelligentes.',
+      title: 'Beaty room',
+      descKey: 'Site web vitrine dynamique pour une institution scolaire.',
       icon: <HiOutlineDeviceMobile />,
+      link: "https://beaty-room.onrender.com",
       tags: ['django', 'node', 'react'],
       bgColor: 'secondary'
     },
     {
       id: 'project3',
-      title: 'Analytics360',
-      descKey: "Solution SaaS d'analyse de données en temps réel avec tableaux de bord personnalisables.",
+      title: 'Power fit',
+      descKey: "Site web moderne et responsive pour une salle de sport premium, offrant des programmes d'entraînement personnalisés, des coachs experts et des services haut de gamme, avec un mode sombre et une navigation intuitive.",
       icon: <AiOutlineBarChart />,
+      link: 'https://power-fit.onrender.com',
       tags: ['react', 'node', 'posgresql'],
       bgColor: 'gradient'
-    }
+    },
+    {
+      id: 'project4',
+      title: 'Projet 4',
+      descKey: 'Description du quatrième projet.',
+      icon: <HiOutlineDeviceMobile />,
+      link: "#",
+      tags: ['django', 'node', 'react'],
+      bgColor: 'secondary'
+    },
+    {
+      id: 'project5',
+      title: 'Projet 5',
+      descKey: 'Description du cinquième projet.',
+      icon: <HiOutlineDeviceMobile />,
+      link: "#",
+      tags: ['django', 'node', 'react'],
+      bgColor: 'secondary'
+    },
   ];
+
+  // Sélectionne les 3 premiers projets ou tous selon l'état
+  const displayedProjects = showAll ? projects : projects.slice(0, 3);
 
   const getBackgroundColor = (colorType: Project['bgColor']) => {
     switch (colorType) {
@@ -75,53 +101,56 @@ const PortfolioSection: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <div 
-              key={project.id}
-              className="rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 cyber-border"
-              style={{ backgroundColor: theme.cardBg }}
-            >
+          {displayedProjects.map((project) => (
+            <a href={project.link} target="_blank" rel="noopener noreferrer" key={project.id}>
               <div 
-                className="h-48 flex items-center justify-center"
-                style={getBackgroundColor(project.bgColor)}
+                className="rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 cyber-border"
+                style={{ backgroundColor: theme.cardBg }}
               >
-                <i 
-                  className={`text-6xl`}
-                  style={{ color:  'white'  }}
-                >{project.icon}</i>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2 futurist-font">
-                  {project.title}
-                </h3>
-                <p className="text-gray-300 mb-4">{t(project.descKey)}</p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tagKey, index) => (
-                    <span 
-                      key={index}
-                      className="px-3 py-1 rounded-full text-sm"
-                      style={{ 
-                        backgroundColor: project.bgColor,
-                        opacity: 0.2,
-                        color: 'yellow'
-                      }}
-                    >
-                      {t(tagKey)}
-                    </span>
-                  ))}
+                <div 
+                  className="h-48 flex items-center justify-center"
+                  style={getBackgroundColor(project.bgColor)}
+                >
+                  <i 
+                    className={`text-6xl`}
+                    style={{ color:  'white'  }}
+                  >{project.icon}</i>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-white mb-2 futurist-font">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-300 mb-4 line-clamp-2 hover:line-clamp-none transition-all duration-300">{t(project.descKey)}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tagKey, index) => (
+                      <span 
+                        key={index}
+                        className="px-3 py-1 rounded-full text-sm"
+                        style={{ 
+                          backgroundColor: project.bgColor === 'gradient' ? theme.primary : undefined,
+                          opacity: 0.2,
+                          color: 'yellow'
+                        }}
+                      >
+                        {t(tagKey)}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
         
         <div className="text-center mt-12">
-          <a 
-            href="#contact" 
-            className="inline-block gradient-bg text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition futurist-font"
-          >
-            {t('seeMore')}
-          </a>
+          {projects.length > 3 && (
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="inline-block gradient-bg text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition futurist-font"
+            >
+              {showAll ? t('Voir moins') : t('Voir plus')}
+            </button>
+          )}
         </div>
       </div>
     </section>
