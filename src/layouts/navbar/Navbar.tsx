@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
                 href="#" 
                 className="text-xl font-semibold text-white futurist-font"
               >
-                AppLife Solutions
+                Innoving stack
               </a>
             </div>
             

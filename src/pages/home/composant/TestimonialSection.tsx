@@ -21,7 +21,7 @@ const TestimonialsSection: React.FC = () => {
       initial: 'S',
       nameKey: 'Sophie Martin',
       positionKey: "CEO, MarketPro",
-      quoteKey: "AppLife Solutions a accompagné notre plateforme depuis sa conception jusqu'à sa maintenance actuelle. Leur approche holistique du cycle de vie de l'application a été déterminante pour notre succès.",
+      quoteKey: "Innoving stack a accompagné notre plateforme depuis sa conception jusqu'à sa maintenance actuelle. Leur approche holistique du cycle de vie de l'application a été déterminante pour notre succès.",
       color: 'primary'
     },
     {

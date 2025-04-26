@@ -37,10 +37,10 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center mb-4">
               <div className="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-lg mr-3 glow-box">
-                ALS
+                <img src="/logo.png" alt="" />
               </div>
               <span className="text-xl font-semibold text-white futurist-font">
-                AppLife Solutions
+              Innoving stack 
               </span>
             </div>
             <p className="text-gray-400">

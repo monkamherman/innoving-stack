@@ -126,12 +126,12 @@ const FoundersSlider: React.FC = () => {
 
   const founders: Founder[] = [
     {
-      name: "Sophie Dubois",
-      role: "Directrice Expérience Utilisateur",
-      story: "Après un parcours chez Google et plusieurs startups à succès, Sophie a rejoint AppLife Solutions pour y implanter sa vision de l'UX lifecycle.",
-      funFact: "Organise des ateliers de poterie le week-end",
-      expertise: ["UX Strategy", "Design System", "User Research"],
-      photo: "/konsultan.png",
+      name: "Ntomb paul laurence ",
+      role: "Architecte logiciel",
+      story: "Après un parcours dans plusieurs startups à succès, Paul a rejoint AppLife Solutions pour y implanter sa vision.",
+      funFact: "Membre dans un club sante dit deux zero",
+      expertise: ["UX Strategy", "analyste SI", "developpeur"],
+      photo: "/paulo.png",
       socialLinks: {
         linkedin: "#",
         twitter: "#",
@@ -142,7 +142,7 @@ const FoundersSlider: React.FC = () => {
       role: "Directrice Technique",
       story: "Diplômée de IAI cameroun avec une spécialisation en génie logiciel, Anges a passé 3 ans chez plusieurs éditeurs de solutions SaaS avant de co-fonder AppLife Solutions. Architecte logiciel renommée, elle a dirigé des projets critiques pour des clients du CAC40. Sa philosophie : 'Une application bien conçue dès la phase d'architecture réduit de 80% les coûts de maintenance future'.",
       // logo: "logo.png",
-      funFact: "Collectionne les claviers mécaniques vintage et participe à des hackathons incognito",
+      funFact: "Collectionne les ",
       expertise: ["Architecture logicielle", "DevOps", "Sécurité applicative"],
       // color: "bg-red-100",
       photo: "service.png",
@@ -153,8 +153,8 @@ const FoundersSlider: React.FC = () => {
     },
     {name: "Moukam Herman",
       role: "Directeur de la Stratégie",
-      story: "Ancien consultant senior chez McKinsey spécialisé dans la transformation digitale, Herman apporte une vision business pragmatique. Il a développé la méthodologie ALM360° qui a servi de base à l'approche unique d'AppLife Solutions. 'Le cycle de vie d'une application ne s'arrête pas au déploiement - c'est là que tout commence' est son credo.",
-      funFact: "Marathonien amateur et passionné de vinification artisanale",
+      story: "Ancien consultant senior chez It engineering spécialisé dans la transformation digitale, Herman apporte une vision business pragmatique. 'Le cycle de vie d'une application ne s'arrête pas au déploiement - c'est là que tout commence' est son credo.",
+      funFact: "Roller amateur et passionné par les arts sonnors",
       expertise: ["Stratégie digitale", "ROI technologique", "Transformation Agile"],
       // color: "bg-gray-200",
       // logo: "logo.png",
