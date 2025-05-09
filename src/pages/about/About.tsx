@@ -80,15 +80,15 @@ const AboutPage: React.FC = () => {
           </h1>
           <img 
             src="/logo.png" 
-            alt={t("Logo Innoving stack ")} 
+            alt={t("Logo RAGE tech  ")} 
             className="h-auto w-full max-w-[65rem] rounded-lg" 
           />
         </div>
         <div className="flex flex-col gap-10">
           <Info
             icon={<BiCubeAlt className="text-2xl lg:text-3xl" style={{ color: theme.primary }} />}
-            title={t('Innoving stack')}
-            description={t("Le logo d’Innoving stack représente une fusion puissante entre la technologie et le cycle évolutif des applications. La partie inférieure, composée de circuits rouges stylisés, évoque le système nerveux digital d’une application : développement, architecture, automatisation et infrastructure.La partie supérieure, formée de formes blanches acérées disposées en arc, symbolise à la fois :une protection (sécurité, surveillance continue),une transformation cyclique (cycle DevOps, mises à jour, évolutivité),et une main de contrôle ou une griffe, marquant votre maîtrise complète du cycle de vie logiciel.")}
+            title={t('RAGE tech')}
+            description={t("Le logo d’RAGE techreprésente une fusion puissante entre la technologie et le cycle évolutif des applications. La partie inférieure, composée de circuits rouges stylisés, évoque le système nerveux digital d’une application : développement, architecture, automatisation et infrastructure.La partie supérieure, formée de formes blanches acérées disposées en arc, symbolise à la fois :une protection (sécurité, surveillance continue),une transformation cyclique (cycle DevOps, mises à jour, évolutivité),et une main de contrôle ou une griffe, marquant votre maîtrise complète du cycle de vie logiciel.")}
             theme={theme}
           />           
         </div>

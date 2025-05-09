@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
                 <img src="/logo.png" alt="" />
               </div>
               <span className="text-xl font-semibold text-white futurist-font">
-              Innoving stack 
+              RAGE tech
               </span>
             </div>
             <p className="text-gray-400">

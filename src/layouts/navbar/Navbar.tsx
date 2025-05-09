@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
                 href="#" 
                 className="text-xl font-semibold text-white futurist-font"
               >
-                Innoving stack
+               RAGE tech
               </a>
             </div>
             
