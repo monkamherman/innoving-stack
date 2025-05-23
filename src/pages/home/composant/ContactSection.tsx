@@ -54,7 +54,7 @@ const ContactSection: React.FC = () => {
                     {t('email')}
                   </h4>
                   <p className="text-gray-300">
-                    herman.moukam5@gmail.com
+                  innovingstack@gmail.com
                   </p>
                 </div>
               </div>
@@ -68,7 +68,7 @@ const ContactSection: React.FC = () => {
                     {t('phone')}
                   </h4>
                   <p className="text-gray-300">
-                    +237 658 852 731
+                    +237 655 600 154/658 852 731
                   </p>
                 </div>
               </div>
@@ -85,7 +85,7 @@ const ContactSection: React.FC = () => {
                 <a href="#" className="w-10 h-10 gradient-bg rounded-full flex items-center justify-center text-white hover:opacity-90 transition glow-box">
                   <AiOutlineTwitter className="size-6" />
                 </a>
-                <a href="#" className="w-10 h-10 gradient-bg rounded-full flex items-center justify-center text-white hover:opacity-90 transition glow-box">
+                <a href="https://www.facebook.com/profile.php?id=61576624587638&mibextid=ZbWKwL" className="w-10 h-10 gradient-bg rounded-full flex items-center justify-center text-white hover:opacity-90 transition glow-box">
                  <CgFacebook className="size-6"/>
                 </a>
                 <a href="#" className="w-10 h-10 gradient-bg rounded-full flex items-center justify-center text-white hover:opacity-90 transition glow-box">

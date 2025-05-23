@@ -128,7 +128,7 @@ const FoundersSlider: React.FC = () => {
     {
       name: "Ntomb paul laurence ",
       role: "Architecte logiciel",
-      story: "Après un parcours dans plusieurs startups à succès, Paul a rejoint AppLife Solutions pour y implanter sa vision.",
+      story: "Après un parcours dans plusieurs startups à succès, Paul a rejoint InnoVing Stack pour y implanter sa vision.",
       funFact: "Membre dans un club sante dit deux zero",
       expertise: ["UX Strategy", "analyste SI", "developpeur"],
       photo: "/paulo.png",
@@ -140,9 +140,9 @@ const FoundersSlider: React.FC = () => {
     {
       name: "Siodjie Anges Gisliane",
       role: "Directrice Technique",
-      story: "Diplômée de IAI cameroun avec une spécialisation en génie logiciel, Anges a passé 3 ans chez plusieurs éditeurs de solutions SaaS avant de co-fonder AppLife Solutions. Architecte logiciel renommée, elle a dirigé des projets critiques pour des clients du CAC40. Sa philosophie : 'Une application bien conçue dès la phase d'architecture réduit de 80% les coûts de maintenance future'.",
+      story: "Diplômée de IAI cameroun avec une spécialisation en génie logiciel, Anges a passé 3 ans chez plusieurs éditeurs de solutions SaaS avant de co-fonder InnoVing Stack. Architecte logiciel renommée, elle a dirigé des projets critiques pour des clients tels que Rage tech. Sa philosophie : 'Une application bien conçue dès la phase d'architecture réduit de 80% les coûts de maintenance future'.",
       // logo: "logo.png",
-      funFact: "Collectionne les ",
+      funFact: "Danseuse amateure de la salsa",
       expertise: ["Architecture logicielle", "DevOps", "Sécurité applicative"],
       // color: "bg-red-100",
       photo: "service.png",

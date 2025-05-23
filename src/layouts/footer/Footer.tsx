@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
                 <img src="/logo.png" alt="" />
               </div>
               <span className="text-xl font-semibold text-white futurist-font">
-              RAGE tech
+              InnoVing Stack
               </span>
             </div>
             <p className="text-gray-400">
@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 mb-4 md:mb-0">
-            © 2025 AppLife Solutions. <span>{t('rightsReserved')}</span>
+            © 2025 InnoVing Stack. <span>{t('rightsReserved')}</span>
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-400 hover:text-white transition">

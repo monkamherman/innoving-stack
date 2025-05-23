@@ -70,7 +70,7 @@ const AboutPage: React.FC = () => {
       </div>
 
       {/* Logo Description Section */}
-      <div 
+      {/* <div 
         className="container futurist-font mx-auto my-[5rem] px-4 flex flex-col justify-center items-center gap-10 lg:flex-row lg:gap-[7rem]"
         style={{ backgroundColor: theme.cardBg, padding: '2rem', borderRadius: '0.5rem' }}
       >
@@ -92,7 +92,7 @@ const AboutPage: React.FC = () => {
             theme={theme}
           />           
         </div>
-      </div>
+      </div> */} 
 
       {/* Founders Slider */}
       <div className="my-[5rem] futurist-font">
